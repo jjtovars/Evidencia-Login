@@ -29,7 +29,7 @@ router.post('/login', async (req, res) => {
         if (user.password !== password) {
             return res.status(401).json({ message: 'Contraseña incorrecta' });
         }
-        res.json({ message: 'Conexión exitosa' });
+        res.json({ message: 'Autenticación satisfactoria' });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
